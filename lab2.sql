@@ -11,11 +11,11 @@ SELECT DISTINCT release_year FROM sakila.film;
 #5
 SELECT COUNT(DISTINCT store_id) FROM sakila.store;
 SELECT COUNT(DISTINCT staff_id) FROM sakila.staff;
-SELECT COUNT(DISTINCT inventory_id) FROM sakila.rental;
-SELECT SUM(isnull(return_date)) as "not returned" FROM sakila.rental;
+SELECT COUNT(*) FROM sakila.film;
+SELECT COUNT(*) FROM sakila.rental;
 SELECT DISTINCT last_name FROM sakila.actor;
 #6
-SELECT * FROM sakila.film
+SELECT title FROM sakila.film
 ORDER BY length desc
 LIMIT 10;
 #7
